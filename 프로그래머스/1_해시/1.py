@@ -1,1 +1,2 @@
 # gogo
+print("go")
