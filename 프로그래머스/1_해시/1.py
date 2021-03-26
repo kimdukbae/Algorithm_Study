@@ -1,2 +1,0 @@
-# gogo
-print("go")
