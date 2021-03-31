@@ -1,3 +1,4 @@
+# 조합
 import sys
 from itertools import combinations
 
