@@ -34,7 +34,6 @@ def bfs():
 
     return distance
 
-
 # 계산된 거리테이블과 크기테이블을 통해 먹을 물고기 탐색 (공간안에 있고 아기상어 크기보다 작은 물고기만 먹게)
 def hunt(distance):
     minimum = 1e9
@@ -50,6 +49,7 @@ def hunt(distance):
         return 0
     else:
         return x, y, minimum
+
 
 answer = 0
 count = 0
