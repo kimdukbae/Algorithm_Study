@@ -46,3 +46,8 @@ def dfs(cnt, x, y):
 
 dfs(0, 0, 0)
 print(ans if ans < 4 else -1)
+
+
+
+# 사다리 인덱스 바꿔서 맨 마지막 행 배열 시작점=도착점 같은지 보는걸로
+
