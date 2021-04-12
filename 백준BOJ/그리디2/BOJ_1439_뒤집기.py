@@ -2,6 +2,7 @@ import sys
 
 input = sys.stdin.readline
 S = input().rstrip()    # 주의! rstrip() 안하면 개행문자 추가되서 길이 + 1이 됨
+# String형이면 개행문자 + 1 됨 / Integer로 받으면 상관 X
 count = [0] * 2 # 카운팅 배열
 
 # 0 -> 1 or 1 -> 0 으로 바꾸는 부분 체크

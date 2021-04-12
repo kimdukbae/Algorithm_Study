@@ -14,6 +14,8 @@ def find(parent, x):
         return x
     parent[x] = find(parent, parent[x])
     return parent[x]  # 경로압축
+    # return find(parent, parent[x])  # 일반적인 find 구현
+    # BOJ 재귀 깊이 1,000
 
 
 def union(parent, a, b):
