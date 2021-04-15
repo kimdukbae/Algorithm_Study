@@ -1,4 +1,5 @@
 # BFS
+# visited 배열 안쓰고 1을 지우는 방식도 ㄱㅊ을듯!!
 import sys
 from collections import deque
 
