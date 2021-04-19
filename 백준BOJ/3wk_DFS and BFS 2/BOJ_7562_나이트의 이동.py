@@ -6,6 +6,7 @@ T = int(input())
 dir = [[-2, -1], [-1, -2], [2, -1], [1, -2], [2, 1], [1, 2], [-2, 1], [-1, 2]]
 
 
+# distance 배열로도 풀 수 있음.
 def bfs(arr, sx, sy, ex, ey):
     if sx == ex and sy == ey:
         return 0
