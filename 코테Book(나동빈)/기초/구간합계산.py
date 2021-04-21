@@ -9,6 +9,8 @@ for i in data:
     sum_value += i
     prefix_sum.append(sum_value)
 
+print(prefix_sum)
+
 # [1, 3] 구간 합
 print(prefix_sum[3] - prefix_sum[0])
 
