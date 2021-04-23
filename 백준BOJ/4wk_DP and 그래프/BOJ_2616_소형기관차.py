@@ -28,7 +28,7 @@ for n in range(1, 4):
         if n == 1:
             dp[n][m] = max(dp[n][m - 1], S[m] - S[m - limit])
 
-        # 점화식
+        # 점화식 --> max(N번째 소형기관차로 M을 선택 안할 때 vs M을 선택할 때)
         else:
             dp[n][m] = max(dp[n][m - 1], dp[n - 1][m - limit] + S[m] - S[m - limit])
         # print_dp(dp)

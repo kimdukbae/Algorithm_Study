@@ -1,5 +1,6 @@
 import sys
 
+# 분할 정복 (이진 탐색) 으로 풀 수 있음
 input = sys.stdin.readline
 seq_size = int(input())
 sequence = list(map(int, input().split()))
