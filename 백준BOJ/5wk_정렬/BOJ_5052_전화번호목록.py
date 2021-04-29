@@ -1,3 +1,6 @@
+# if sum(map(lambda x: x.startswith(cur_num), phone[j])) > 0:
+#     ans = "NO"
+#     break
 import sys
 
 input = sys.stdin.readline
@@ -21,3 +24,4 @@ for _ in range(T):
         print('NO')
     else:
         print('YES')
+
