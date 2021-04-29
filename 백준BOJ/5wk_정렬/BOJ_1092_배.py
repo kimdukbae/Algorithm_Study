@@ -1,4 +1,5 @@
 # 왜 틀린지 모르겠음...
+#
 # import sys
 #
 # input = sys.stdin.readline
@@ -15,6 +16,9 @@
 #     print(-1)
 #     sys.exit(0)
 # else:
+#     크레인이 무조건 내가 구해준 size만큼 돌라는 보장이 없음
+#     (반례) crane : 2 1
+#            box : 2 2 2 2 1
 #     if M % N == 0:
 #         size = M // N
 #     else:
@@ -75,7 +79,7 @@ while True:
             # box를 crane으로 아직 안 옮겼고, 무게 제한보다 가벼운 box를 crane으로 옮길 수 있다면
             if not visited[position[i]] and boxes[position[i]] <= crane_limit[i]:
                 visited[position[i]] = True
-                position[i] += 1    # position[i]의 value는 옮긴 박스의 번호 + 1
+                position[i] += 1  # position[i]의 value는 옮긴 박스의 번호 + 1
                 count += 1  # 옮긴 box 개수 + 1
                 break
             # 조건 만족 못하면 다음 box를 해당 crane으로 옮길 수 있는지 탐색하기 위한 증가
@@ -83,3 +87,4 @@ while True:
     ans += 1
 
 print(ans)
+
