@@ -16,4 +16,11 @@ ex = [
     [5, 6, 7, 8],
     [9, 10, 11, 12]
 ]
-print(rotate_matrix_90(ex))
+for e in ex:
+    print(*e)
+
+print()
+
+for rm in rotate_matrix_90(ex):
+    print(*rm)
+# print(rotate_matrix_90(ex))
