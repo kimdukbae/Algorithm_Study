@@ -1,4 +1,4 @@
-# 다우기술 소용돌이 배열!!
+# COS Pro 1급 소용돌이 배열!!
 def check(a, b, arr, n):
     if 0 <= a < n and 0 <= b < n and arr[a][b] == 0:
         return True
