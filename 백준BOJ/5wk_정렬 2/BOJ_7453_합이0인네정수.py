@@ -1,4 +1,4 @@
-# Python3 시간 초과 / PyPy3 통과
+# # Python3 시간 초과 / PyPy3 통과
 import sys
 from collections import defaultdict
 
@@ -15,9 +15,11 @@ for _ in range(n):
 # A + B 배열과
 # C + D 배열로 나누기 -> 시간 복잡도 줄이기 위해 (N^4 -> N^2)
 first = defaultdict(int)
+# first = {}
 for i in range(n):
     for j in range(n):
         A_B = A[i] + B[j]
+        # first.setdefault(A_B, 0)
         first[A_B] += 1
 
 answer = 0
@@ -33,8 +35,9 @@ print(answer)
 
 # 전치시키기!
 # import sys
-
+#
 # n = int(sys.stdin.readline())
 # nums = [list(map(int, sys.stdin.readline().split())) for _ in range(n)]
+# print(nums)
 # nums = list(map(list, zip(*nums)))
 # print(nums)

@@ -212,10 +212,12 @@ print(bisect_right(a, x))
 def count_by_range(b, left_value, right_value):
     right_index = bisect_right(b, right_value)
     left_index = bisect_left(b, left_value)
+    print('right : ', right_index, 'left :', left_index)
     return right_index - left_index
 
 
 a = [1, 2, 3, 3, 3, 3, 4, 4, 8, 9]
+print('bisect')
 print(count_by_range(a, 4, 4))
 print(count_by_range(a, -1, 3))
 
