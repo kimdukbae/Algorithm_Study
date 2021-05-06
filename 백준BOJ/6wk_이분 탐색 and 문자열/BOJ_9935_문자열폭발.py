@@ -5,6 +5,7 @@ string = input().rstrip()
 bomb = input().rstrip()
 stack = []
 
+
 for i in range(len(string)):
     stack.append(string[i])
     # stack[-x:] -> 문자열의 오른쪽에서부터 x번째 ~ 마지막 까지 잘라낸다.
