@@ -41,3 +41,6 @@ class Trie(object):
         # 문자가 포함되어있다는 뜻이다!
         if curr_node.data is not None:
             return True
+
+
+# https://cotak.tistory.com/3 --> 참고하면 좋다고 생각!
