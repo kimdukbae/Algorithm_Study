@@ -54,6 +54,8 @@ def KMP(txt, patt):
 
 # text = 'ABXABABABXAB'
 # pattern = 'ABXAB'
-text = "ABABDABACDABABCABAB"
-pattern = "ABABCABAB"
+# text = "ABABDABACDABABCABAB"
+# pattern = "ABABCABAB"
+text = 'ABABCABABABCABABAB'
+pattern = 'ABABCABABAB'
 KMP(text, pattern)
