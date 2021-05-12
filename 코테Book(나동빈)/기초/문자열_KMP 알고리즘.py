@@ -1,4 +1,5 @@
 # 참고 : https://devbull.xyz/python-kmp-algorijeumeuro-munjayeol-cajgi/
+# '라빈 카프 알고리즘'도 있다.
 # Longest proper prefix which is suffix
 def compute_LPS(string, lps):
     # 접두사와 접미사의 가장 긴 길이
