@@ -4,6 +4,8 @@ input = sys.stdin.readline
 
 
 # 이해 살짝 안됨
+# 결국엔 음수 사이클이 존재하는지만 판단해주기만 하면 된다.
+# 원래 벨만-포드는 시작과 도착점이 있는데 여기는 없다.
 def bellman_ford():
     # 모든 정점에 대해
     for start in range(1, V + 1):
