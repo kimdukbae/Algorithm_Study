@@ -12,7 +12,7 @@ def solution(new_id):
     answer = temp
 
     # 3번 --> 구현 오래 걸렸다.
-    idx = 0    # idx는 계속 증가
+    idx = 0  # idx는 계속 증가
     while answer[idx:].count('.') > 1:
         cnt = 0
         # 시작 idx가 '.'이고
@@ -56,3 +56,30 @@ print(solution("z-+.^."))
 print(solution("=.="))
 print(solution("123_.def"))
 print(solution("abcdefghijklmn.p"))
+
+
+# 현우
+# import re
+#
+#
+# def solution(new_id):
+#     # 1.
+#     new_id = new_id.lower()
+#     # 2.
+#     newid = "".join(re.findall(r"[a-z0-9-.]", new_id))
+#     # 3.
+#     new_id = "".join(re.sub(r".{2,1000}", repl=".", string=new_id))
+#     # 4.
+#     new_id = new_id.strip(".")
+#     # 5.
+#     if new_id == "":
+#         new_id = "a"
+#     # 6.
+#     if len(new_id) >= 16:
+#         new_id = new_id[:15].rstrip(".")
+#     # 7.
+#     if len(new_id) <= 2:
+#         s = new_id[-1]
+#         while len(new_id) < 3:
+#             new_id += s
+#     return new_id

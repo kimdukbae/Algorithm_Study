@@ -38,11 +38,8 @@ def solution(p):
         answer = '('
         answer += solution(v)
         answer += ')'
-        if u:
-            u = u.replace(u[0], "")
-        if u:
-            u = u.replace(u[-1], "")
-        for i in range(len(u)):
+
+        for i in range(1, len(u) - 1):
             if u[i] == '(':
                 answer += ')'
             else:
