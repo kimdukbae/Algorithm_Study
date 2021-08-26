@@ -7,11 +7,14 @@ result = []
 
 
 def N_M(depth, n, r):
-    if depth == M:
+    if depth == r:
         print(' '.join(map(str, result)))
         return
+
     for i in range(1, n + 1):
         if visited[i]:
+            continue
+        if result and result[-1] >= i:
             continue
         visited[i] = True
         result.append(i)
