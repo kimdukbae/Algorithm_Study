@@ -35,3 +35,5 @@ def backtracking(depth):
 
 backtracking(0)
 print(answer)
+
+# 옛날 방법도 같이해서 2가지 ㄱㄱ
