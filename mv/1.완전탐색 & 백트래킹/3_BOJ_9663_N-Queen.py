@@ -36,4 +36,33 @@ def backtracking(depth):
 backtracking(0)
 print(answer)
 
-# 옛날 방법도 같이해서 2가지 ㄱㄱ
+'''
+import sys
+
+input = sys.stdin.readline
+
+N = int(input())
+
+a = [0] * N
+b = [0] * (2 * N - 1)
+c = [0] * (2 * N - 1)
+answer = 0
+
+
+def dfs(depth):
+    global answer
+
+    if depth == N:
+        answer += 1
+        return
+
+    for i in range(N):
+        if not a[i] and not b[depth + i] and not c[depth - i + N - 1]:
+            a[i] = b[depth + i] = c[depth - i + N - 1] = 1
+            dfs(depth + 1)
+            a[i] = b[depth + i] = c[depth - i + N - 1] = 0
+
+
+dfs(0)
+print(answer)
+'''
